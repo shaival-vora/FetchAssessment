@@ -14,6 +14,9 @@
 		E190F05A2BAB3CDC0070060C /* FetchAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190F0592BAB3CDC0070060C /* FetchAssessmentTests.swift */; };
 		E190F0642BAB3CDC0070060C /* FetchAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190F0632BAB3CDC0070060C /* FetchAssessmentUITests.swift */; };
 		E190F0662BAB3CDC0070060C /* FetchAssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190F0652BAB3CDC0070060C /* FetchAssessmentUITestsLaunchTests.swift */; };
+		E190F0742BAB42CC0070060C /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190F0732BAB42CC0070060C /* ItemModel.swift */; };
+		E190F0772BAB458F0070060C /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190F0762BAB458F0070060C /* ItemViewModel.swift */; };
+		E190F07A2BAB48FC0070060C /* ItemNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190F0792BAB48FC0070060C /* ItemNetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		E190F05F2BAB3CDC0070060C /* FetchAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E190F0632BAB3CDC0070060C /* FetchAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAssessmentUITests.swift; sourceTree = "<group>"; };
 		E190F0652BAB3CDC0070060C /* FetchAssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E190F0732BAB42CC0070060C /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		E190F0762BAB458F0070060C /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		E190F0792BAB48FC0070060C /* ItemNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemNetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 		E190F0472BAB3CDB0070060C /* FetchAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				E190F0782BAB45A90070060C /* Service */,
+				E190F0752BAB44320070060C /* ViewModel */,
+				E190F0722BAB42BF0070060C /* Model */,
 				E190F0482BAB3CDB0070060C /* FetchAssessmentApp.swift */,
 				E190F04A2BAB3CDB0070060C /* ContentView.swift */,
 				E190F04C2BAB3CDC0070060C /* Assets.xcassets */,
@@ -125,6 +134,30 @@
 				E190F0652BAB3CDC0070060C /* FetchAssessmentUITestsLaunchTests.swift */,
 			);
 			path = FetchAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		E190F0722BAB42BF0070060C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E190F0732BAB42CC0070060C /* ItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E190F0752BAB44320070060C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E190F0762BAB458F0070060C /* ItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E190F0782BAB45A90070060C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E190F0792BAB48FC0070060C /* ItemNetworkService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E190F0742BAB42CC0070060C /* ItemModel.swift in Sources */,
+				E190F0772BAB458F0070060C /* ItemViewModel.swift in Sources */,
 				E190F04B2BAB3CDB0070060C /* ContentView.swift in Sources */,
 				E190F0492BAB3CDB0070060C /* FetchAssessmentApp.swift in Sources */,
+				E190F07A2BAB48FC0070060C /* ItemNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
