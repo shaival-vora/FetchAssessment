@@ -24,7 +24,7 @@ struct ContentView: View {
                     ForEach(itemData.sorted(by: {$0.key < $1.key}), id: \.key) { key, items in
                         Section(header: Text("List ID: \(key), Item count: \(items.count)")) {
                             ForEach(items, id: \.id) { item in
-                                Text("ID: \(item.id), Name: \(item.name ?? "")")
+                                Text("Name: \(item.name ?? "")")
                             }
                         }
                     }

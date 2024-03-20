@@ -100,11 +100,11 @@
 		E190F0472BAB3CDB0070060C /* FetchAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				E190F07B2BAB6A0D0070060C /* View */,
 				E190F0782BAB45A90070060C /* Service */,
 				E190F0752BAB44320070060C /* ViewModel */,
 				E190F0722BAB42BF0070060C /* Model */,
 				E190F0482BAB3CDB0070060C /* FetchAssessmentApp.swift */,
-				E190F04A2BAB3CDB0070060C /* ContentView.swift */,
 				E190F04C2BAB3CDC0070060C /* Assets.xcassets */,
 				E190F04E2BAB3CDC0070060C /* Preview Content */,
 			);
@@ -158,6 +158,14 @@
 				E190F0792BAB48FC0070060C /* ItemNetworkService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		E190F07B2BAB6A0D0070060C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E190F04A2BAB3CDB0070060C /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
