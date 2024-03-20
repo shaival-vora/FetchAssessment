@@ -24,11 +24,11 @@ final class ItemViewModel: ObservableObject {
     /// Published property to expose the state to the views.
     @Published private (set) var state: State = .notLoading
     
-    /// Network service used for fetching item data.
-    private let service: ItemNetworkService
+    /// Network service Protocol used for fetching item data.
+    private let service: ItemNetworkServiceProtocol
     
-    /// Initializer to inject the network service dependency.
-    init(service: ItemNetworkService) {
+    /// Initializer to inject the network service protocol dependency.
+    init(service: ItemNetworkServiceProtocol) {
         self.service = service
     }
     

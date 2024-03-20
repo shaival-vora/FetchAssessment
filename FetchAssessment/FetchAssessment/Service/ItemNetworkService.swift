@@ -7,10 +7,15 @@
 
 import Foundation
 
+protocol ItemNetworkServiceProtocol {
+    func fetchItemData() async throws -> [ItemModel]
+}
+
+
 // Network Service Structure: It promotes a clean separation of concerns by isolating networking code from SwiftUI views and view models, thus improving code readability, maintainability, and testability.
 
 /// - ItemNetworkService class makes the API call to get the details about the hiringAPI data
-struct ItemNetworkService {
+struct ItemNetworkService: ItemNetworkServiceProtocol {
     
     /// Enum to represent different errors that can occur during network requests.
     enum ItemError: Error {
